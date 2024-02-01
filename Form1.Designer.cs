@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             lblTimeLeft = new Label();
             textBoxTimeLeft = new TextBox();
             numericUpDown1 = new NumericUpDown();
@@ -36,21 +37,22 @@
             lblPlusRight = new Label();
             lblEqual = new Label();
             label1 = new Label();
-            label2 = new Label();
+            lblMinRight = new Label();
             lblMinus = new Label();
-            label4 = new Label();
+            lblMinLeft = new Label();
             numericUpDown2 = new NumericUpDown();
             label5 = new Label();
-            label6 = new Label();
+            lblMultRight = new Label();
             lblMultiply = new Label();
-            label8 = new Label();
+            lblMultLeft = new Label();
             numericUpDown3 = new NumericUpDown();
             label9 = new Label();
-            label10 = new Label();
+            lblDevRight = new Label();
             lblDevide = new Label();
-            label12 = new Label();
+            lblDevLeft = new Label();
             numericUpDown4 = new NumericUpDown();
             btnStart = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
@@ -69,6 +71,7 @@
             // 
             // textBoxTimeLeft
             // 
+            textBoxTimeLeft.Enabled = false;
             textBoxTimeLeft.Location = new Point(609, 9);
             textBoxTimeLeft.Name = "textBoxTimeLeft";
             textBoxTimeLeft.Size = new Size(99, 27);
@@ -132,15 +135,15 @@
             label1.TabIndex = 11;
             label1.Text = "=";
             // 
-            // label2
+            // lblMinRight
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(305, 145);
-            label2.Name = "label2";
-            label2.Size = new Size(35, 46);
-            label2.TabIndex = 10;
-            label2.Text = "?";
+            lblMinRight.AutoSize = true;
+            lblMinRight.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMinRight.Location = new Point(305, 145);
+            lblMinRight.Name = "lblMinRight";
+            lblMinRight.Size = new Size(35, 46);
+            lblMinRight.TabIndex = 10;
+            lblMinRight.Text = "?";
             // 
             // lblMinus
             // 
@@ -152,15 +155,15 @@
             lblMinus.TabIndex = 9;
             lblMinus.Text = "-";
             // 
-            // label4
+            // lblMinLeft
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(99, 145);
-            label4.Name = "label4";
-            label4.Size = new Size(35, 46);
-            label4.TabIndex = 8;
-            label4.Text = "?";
+            lblMinLeft.AutoSize = true;
+            lblMinLeft.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMinLeft.Location = new Point(99, 145);
+            lblMinLeft.Name = "lblMinLeft";
+            lblMinLeft.Size = new Size(35, 46);
+            lblMinLeft.TabIndex = 8;
+            lblMinLeft.Text = "?";
             // 
             // numericUpDown2
             // 
@@ -180,15 +183,15 @@
             label5.TabIndex = 16;
             label5.Text = "=";
             // 
-            // label6
+            // lblMultRight
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label6.Location = new Point(305, 229);
-            label6.Name = "label6";
-            label6.Size = new Size(35, 46);
-            label6.TabIndex = 15;
-            label6.Text = "?";
+            lblMultRight.AutoSize = true;
+            lblMultRight.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMultRight.Location = new Point(305, 229);
+            lblMultRight.Name = "lblMultRight";
+            lblMultRight.Size = new Size(35, 46);
+            lblMultRight.TabIndex = 15;
+            lblMultRight.Text = "?";
             // 
             // lblMultiply
             // 
@@ -200,15 +203,15 @@
             lblMultiply.TabIndex = 14;
             lblMultiply.Text = "*";
             // 
-            // label8
+            // lblMultLeft
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label8.Location = new Point(99, 229);
-            label8.Name = "label8";
-            label8.Size = new Size(35, 46);
-            label8.TabIndex = 13;
-            label8.Text = "?";
+            lblMultLeft.AutoSize = true;
+            lblMultLeft.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblMultLeft.Location = new Point(99, 229);
+            lblMultLeft.Name = "lblMultLeft";
+            lblMultLeft.Size = new Size(35, 46);
+            lblMultLeft.TabIndex = 13;
+            lblMultLeft.Text = "?";
             // 
             // numericUpDown3
             // 
@@ -228,15 +231,15 @@
             label9.TabIndex = 21;
             label9.Text = "=";
             // 
-            // label10
+            // lblDevRight
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label10.Location = new Point(305, 313);
-            label10.Name = "label10";
-            label10.Size = new Size(35, 46);
-            label10.TabIndex = 20;
-            label10.Text = "?";
+            lblDevRight.AutoSize = true;
+            lblDevRight.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblDevRight.Location = new Point(305, 313);
+            lblDevRight.Name = "lblDevRight";
+            lblDevRight.Size = new Size(35, 46);
+            lblDevRight.TabIndex = 20;
+            lblDevRight.Text = "?";
             // 
             // lblDevide
             // 
@@ -248,15 +251,15 @@
             lblDevide.TabIndex = 19;
             lblDevide.Text = "/";
             // 
-            // label12
+            // lblDevLeft
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label12.Location = new Point(99, 313);
-            label12.Name = "label12";
-            label12.Size = new Size(35, 46);
-            label12.TabIndex = 18;
-            label12.Text = "?";
+            lblDevLeft.AutoSize = true;
+            lblDevLeft.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblDevLeft.Location = new Point(99, 313);
+            lblDevLeft.Name = "lblDevLeft";
+            lblDevLeft.Size = new Size(35, 46);
+            lblDevLeft.TabIndex = 18;
+            lblDevLeft.Text = "?";
             // 
             // numericUpDown4
             // 
@@ -269,12 +272,17 @@
             // btnStart
             // 
             btnStart.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            btnStart.Location = new Point(227, 384);
+            btnStart.Location = new Point(246, 382);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(171, 43);
             btnStart.TabIndex = 22;
             btnStart.Text = "Start the quiz";
             btnStart.UseVisualStyleBackColor = true;
+            btnStart.Click += btnStart_Click;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
@@ -283,19 +291,19 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnStart);
             Controls.Add(label9);
-            Controls.Add(label10);
+            Controls.Add(lblDevRight);
             Controls.Add(lblDevide);
-            Controls.Add(label12);
+            Controls.Add(lblDevLeft);
             Controls.Add(numericUpDown4);
             Controls.Add(label5);
-            Controls.Add(label6);
+            Controls.Add(lblMultRight);
             Controls.Add(lblMultiply);
-            Controls.Add(label8);
+            Controls.Add(lblMultLeft);
             Controls.Add(numericUpDown3);
             Controls.Add(label1);
-            Controls.Add(label2);
+            Controls.Add(lblMinRight);
             Controls.Add(lblMinus);
-            Controls.Add(label4);
+            Controls.Add(lblMinLeft);
             Controls.Add(numericUpDown2);
             Controls.Add(lblEqual);
             Controls.Add(lblPlusRight);
@@ -324,20 +332,21 @@
         private Label lblPlusRight;
         private Label lblEqual;
         private Label label1;
-        private Label label2;
+        private Label lblMinRight;
         private Label lblMinus;
-        private Label label4;
+        private Label lblMinLeft;
         private NumericUpDown numericUpDown2;
         private Label label5;
-        private Label label6;
+        private Label lblMultRight;
         private Label lblMultiply;
-        private Label label8;
+        private Label lblMultLeft;
         private NumericUpDown numericUpDown3;
         private Label label9;
-        private Label label10;
+        private Label lblDevRight;
         private Label lblDevide;
-        private Label label12;
+        private Label lblDevLeft;
         private NumericUpDown numericUpDown4;
         private Button btnStart;
+        private System.Windows.Forms.Timer timer1;
     }
 }
